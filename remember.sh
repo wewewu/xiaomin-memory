@@ -11,12 +11,24 @@ if [ -z "$1" ]; then
     exit 1
 fi
 
-CATEGORY=$1
+CATEGORY="$1"
 shift
+
+if [ -z "$1" ]; then
+    echo "错误: 请提供内容"
+    exit 1
+fi
+
 CONTENT="$@"
 
 TIMESTAMP=$(date +%Y%m%d-%H%M%S)
 FILE="$HOME_DIR/memory/$CATEGORY/${TIMESTAMP}.md"
+
+# 检查目录是否存在
+if [ ! -d "$HOME_DIR/memory/$CATEGORY" ]; then
+    echo "错误: 分类目录不存在: $CATEGORY"
+    exit 1
+fi
 
 # 创建文件
 echo "# $CONTENT" > "$FILE"
