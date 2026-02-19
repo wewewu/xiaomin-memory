@@ -512,6 +512,17 @@
       "modified": "2026-02-19T14:12:05.558Z"
     },
     {
+      "id": "rules/多Agent记忆分配方案",
+      "path": "/home/wewewu/memory/rules/多Agent记忆分配方案.md",
+      "category": "rules",
+      "title": "多Agent记忆分配方案",
+      "content": "# 多 Agent 记忆分配方案\n\n**创建日期**: 2026-02-19\n**场景**: 多 Agent 协作时的记忆空间分配\n\n---\n\n## 分配原则\n\n| 维度 | 目录 | 用途 |\n|------|------|------|\n| 身份 | agents/ | Agent 专属身份和知识 |\n| 交接 | handoffs/ | 任务交接信息 |\n| 项目 | projects/ | 项目隔离记忆 |\n\n---\n\n## 目录说明\n\n### 1. agents/ — Agent 身份记忆\n\n**适用场景：**\n- Agent 启动时加载\n- 记录 Agent 的\"人设\"\n- 长期知识积累\n\n**文件示例：**\n```\nagents/小智.md      → 身份：实验室研究员，技能：ETH分析\nagents/trader.md   → 交易策略、风控规则\n```\n\n---\n\n### 2. handoffs/ — 任务交接\n\n**适用场景：**\n- 任务完成，需要交接给下一个 Agent\n- Agent A 临时无法继续，Agent B 接手\n- 上下文需要跨 Agent 传递\n\n**文件示例：**\n```\nhandoffs/小岷→小智.md   → 小岷交给小智的任务\nhandoffs/小智→小绿.md   → 小智交给小绿的任务\nhandoffs/紧急切换.md    → 紧急情况交接\n```\n\n---\n\n### 3. projects/ — 项目隔离\n\n**适用场景：**\n- 多 Agent 协作同一项目\n- 需要隔离不同项目的记忆\n- 项目专属的上下文\n\n**文件示例：**\n```\nprojects/ETH交易/\n├── 小智-分析.md   → 小智的分析记录\n├── 小绿-风控.md   → 小绿的风控规则\n└── 共享记忆.md    → 共享信息\n\nprojects/小智培养/\n└── 成长记录.md\n```\n\n---\n\n## 实际工作流示例\n\n```\n场景：ETH 交易项目\n\n1. 项目启动\n   → 创建 projects/ETH交易/\n\n2. Agent 加入\n   → agents/小智.md 加载身份\n   → agents/trader.md 加载技能\n\n3. 任务交接（小岷 → 小智）\n   → handoffs/分析任务.md\n\n4. 分析完成，风控接力\n   → handoffs/小智→风控.md\n\n5. 项目结束\n   → projects/ETH交易/ 归档\n```\n\n---\n\n## 总结\n\n| 问题 | 答案 |\n|------|------|\n| 什么时候用 agents/? | Agent 的\"身份\"和\"人设\" |\n| 什么时候用 handoffs/? | 任务在 Agent 之间传递时 |\n| 什么时候用 projects/? | 多 Agent 协作的\"项目\"记忆 |\n\n---\n\n*记录于 2026-02-19 - 小岷*\n",
+      "frontmatter": {},
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-19T15:47:24.548Z"
+    },
+    {
       "id": "projects/小智培养",
       "path": "/home/wewewu/memory/projects/小智培养.md",
       "category": "projects",
