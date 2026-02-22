@@ -890,6 +890,50 @@
       "modified": "2026-02-19T14:09:09.398Z"
     },
     {
+      "id": "agents/xiaozhi/README",
+      "path": "/home/wewewu/memory/agents/xiaozhi/README.md",
+      "category": "agents",
+      "title": "README",
+      "content": "# 小智 - 实验机上的 AI 助手\n",
+      "frontmatter": {},
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T03:15:03.851Z"
+    },
+    {
+      "id": "agents/trader/README",
+      "path": "/home/wewewu/memory/agents/trader/README.md",
+      "category": "agents",
+      "title": "README",
+      "content": "# 交易代理 - 负责交易策略执行\n",
+      "frontmatter": {},
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T03:15:03.851Z"
+    },
+    {
+      "id": "agents/research/README",
+      "path": "/home/wewewu/memory/agents/research/README.md",
+      "category": "agents",
+      "title": "README",
+      "content": "# 研究代理 - 负责信息收集和分析\n",
+      "frontmatter": {},
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T03:15:03.851Z"
+    },
+    {
+      "id": "agents/general/README",
+      "path": "/home/wewewu/memory/agents/general/README.md",
+      "category": "agents",
+      "title": "README",
+      "content": "# 通用代理 - 辅助任务执行\n",
+      "frontmatter": {},
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T03:15:03.851Z"
+    },
+    {
       "id": "backups/20260219/full-memory-backup/working-buffer",
       "path": "/home/wewewu/memory/backups/20260219/full-memory-backup/working-buffer.md",
       "category": "backups",
