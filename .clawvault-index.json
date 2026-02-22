@@ -534,6 +534,21 @@
       "modified": "2026-02-19T14:09:49.890Z"
     },
     {
+      "id": "projects/vps",
+      "path": "/home/wewewu/memory/projects/vps.md",
+      "category": "projects",
+      "title": "VPS代理交易",
+      "content": "大哥的交易项目，需要搭建代理服务器后配置OpenClaw多Agent交易框架\n",
+      "frontmatter": {
+        "title": "VPS代理交易",
+        "date": "2026-02-22",
+        "memoryType": "project"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:31:48.742Z"
+    },
+    {
       "id": "projects/VPS代理交易",
       "path": "/home/wewewu/memory/projects/VPS代理交易.md",
       "category": "projects",
@@ -696,6 +711,19 @@
       ],
       "tags": [],
       "modified": "2026-02-19T10:13:04.925Z"
+    },
+    {
+      "id": "backlog/vps",
+      "path": "/home/wewewu/memory/backlog/vps.md",
+      "category": "backlog",
+      "title": "vps",
+      "content": "# 等待VPS准备好，搭建代理服务器\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:32:01.330Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:32:01.333Z"
     },
     {
       "id": "backups/20260219/SESSION-STATE",
