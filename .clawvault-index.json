@@ -769,6 +769,71 @@
       "modified": "2026-02-22T02:43:12.704Z"
     },
     {
+      "id": "backlog/hyper-reality-agent",
+      "path": "/home/wewewu/memory/backlog/hyper-reality-agent.md",
+      "category": "backlog",
+      "title": "hyper-reality-agent",
+      "content": "# Hyper-Reality-Agent: 状态持久化\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:52:28.949Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:52:28.952Z"
+    },
+    {
+      "id": "backlog/hyper-reality-agent-tools",
+      "path": "/home/wewewu/memory/backlog/hyper-reality-agent-tools.md",
+      "category": "backlog",
+      "title": "hyper-reality-agent-tools",
+      "content": "# Hyper-Reality-Agent: Tools注册系统\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:52:09.093Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:52:09.096Z"
+    },
+    {
+      "id": "backlog/hyper-reality-agent-rag",
+      "path": "/home/wewewu/memory/backlog/hyper-reality-agent-rag.md",
+      "category": "backlog",
+      "title": "hyper-reality-agent-rag",
+      "content": "# Hyper-Reality-Agent: RAG知识库集成\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:52:09.409Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:52:09.413Z"
+    },
+    {
+      "id": "backlog/hyper-reality-agent-memory",
+      "path": "/home/wewewu/memory/backlog/hyper-reality-agent-memory.md",
+      "category": "backlog",
+      "title": "hyper-reality-agent-memory",
+      "content": "# Hyper-Reality-Agent: Memory模块实现\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:52:08.795Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:52:08.798Z"
+    },
+    {
+      "id": "backlog/hyper-reality-agent-agent",
+      "path": "/home/wewewu/memory/backlog/hyper-reality-agent-agent.md",
+      "category": "backlog",
+      "title": "hyper-reality-agent-agent",
+      "content": "# Hyper-Reality-Agent: 核心Agent类设计\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:52:08.499Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:52:08.502Z"
+    },
+    {
       "id": "backlog/1password-vps",
       "path": "/home/wewewu/memory/backlog/1password-vps.md",
       "category": "backlog",
@@ -992,6 +1057,21 @@
       "links": [],
       "tags": [],
       "modified": "2026-02-19T14:21:25.651Z"
+    },
+    {
+      "id": "lessons/obsidian",
+      "path": "/home/wewewu/memory/lessons/obsidian.md",
+      "category": "lessons",
+      "title": "Obsidian聊天记录自动同步配置完成",
+      "content": "\n**时间**: 2026-02-22\n**任务**: 配置 Obsidian 聊天记录自动提取经验\n\n**已完成配置**:\n1. Obsidian 自动记录聊天 (每30分钟)\n2. ClawVault 有 transcripts 目录\n3. 创建 cron 任务: extract_lessons (每4小时运行)\n4. 自动提取有价值经验保存到 lessons/\n\n**工作流程**:\n- 每30分钟: all-chats-*.md 自动保存\n- 每4小时: LLM 提取经验 → clawvault remember lesson\n- 手动查看: clawvault search 关键词\n\n**相关命令**:\n- clawvault search 经验\n- clawvault backlog list\n",
+      "frontmatter": {
+        "title": "Obsidian聊天记录自动同步配置完成",
+        "date": "2026-02-22",
+        "memoryType": "lesson"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:58:29.768Z"
     }
   ]
 }
