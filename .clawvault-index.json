@@ -674,6 +674,21 @@
       "modified": "2026-02-19T14:09:38.348Z"
     },
     {
+      "id": "lessons/alpaca",
+      "path": "/home/wewewu/memory/lessons/alpaca.md",
+      "category": "lessons",
+      "title": "Alpaca免费数据方案",
+      "content": "\n**时间**: 2026-02-09\n**问题**: 网络环境无法访问 Binance/Hyperliquid API（超时、被墙）\n**约束**: 大哥穷，买不起代理\n**方案**: Alpaca Python SDK - 免费、无需 API Key 的加密货币数据\n\n```python\nfrom alpaca.data import CryptoHistoricalDataClient, TimeFrame\nclient = CryptoHistoricalDataClient()  # 无需 API Key！\n```\n\n**成果**: \n- 获取 232 条 ETH 1小时K线数据（10天）\n- 定时任务每小时自动推送飞书\n- 完全免费，无需代理\n",
+      "frontmatter": {
+        "title": "Alpaca免费数据方案",
+        "date": "2026-02-22",
+        "memoryType": "lesson"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:43:06.724Z"
+    },
+    {
       "id": "lessons/20260219-225420",
       "path": "/home/wewewu/memory/lessons/20260219-225420.md",
       "category": "lessons",
@@ -739,6 +754,32 @@
       "links": [],
       "tags": [],
       "modified": "2026-02-22T02:32:01.333Z"
+    },
+    {
+      "id": "backlog/openclawagent",
+      "path": "/home/wewewu/memory/backlog/openclawagent.md",
+      "category": "backlog",
+      "title": "openclawagent",
+      "content": "# 配置OpenClaw多Agent交易框架\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:43:12.700Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:43:12.704Z"
+    },
+    {
+      "id": "backlog/1password-vps",
+      "path": "/home/wewewu/memory/backlog/1password-vps.md",
+      "category": "backlog",
+      "title": "1password-vps",
+      "content": "# 1Password集成 - 等VPS搭好网络通后\n",
+      "frontmatter": {
+        "created": "2026-02-22T02:43:12.993Z"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:43:12.997Z"
     },
     {
       "id": "backups/20260219/SESSION-STATE",
@@ -951,21 +992,6 @@
       "links": [],
       "tags": [],
       "modified": "2026-02-19T14:21:25.651Z"
-    },
-    {
-      "id": "lessons/alpaca",
-      "path": "/home/wewewu/memory/lessons/alpaca.md",
-      "category": "lessons",
-      "title": "Alpaca免费数据方案",
-      "content": "\n**时间**: 2026-02-09\n**问题**: 网络环境无法访问 Binance/Hyperliquid API（超时、被墙）\n**约束**: 大哥穷，买不起代理\n**方案**: Alpaca Python SDK - 免费、无需 API Key 的加密货币数据\n\n```python\nfrom alpaca.data import CryptoHistoricalDataClient, TimeFrame\nclient = CryptoHistoricalDataClient()  # 无需 API Key！\n```\n\n**成果**: \n- 获取 232 条 ETH 1小时K线数据（10天）\n- 定时任务每小时自动推送飞书\n- 完全免费，无需代理\n",
-      "frontmatter": {
-        "title": "Alpaca免费数据方案",
-        "date": "2026-02-22",
-        "memoryType": "lesson"
-      },
-      "links": [],
-      "tags": [],
-      "modified": "2026-02-22T02:43:06.724Z"
     }
   ]
 }
