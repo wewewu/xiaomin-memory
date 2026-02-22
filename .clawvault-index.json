@@ -674,6 +674,21 @@
       "modified": "2026-02-19T14:09:38.348Z"
     },
     {
+      "id": "lessons/obsidian",
+      "path": "/home/wewewu/memory/lessons/obsidian.md",
+      "category": "lessons",
+      "title": "Obsidian聊天记录自动同步配置完成",
+      "content": "\n**时间**: 2026-02-22\n**任务**: 配置 Obsidian 聊天记录自动提取经验\n\n**已完成配置**:\n1. Obsidian 自动记录聊天 (每30分钟)\n2. ClawVault 有 transcripts 目录\n3. 创建 cron 任务: extract_lessons (每4小时运行)\n4. 自动提取有价值经验保存到 lessons/\n\n**工作流程**:\n- 每30分钟: all-chats-*.md 自动保存\n- 每4小时: LLM 提取经验 → clawvault remember lesson\n- 手动查看: clawvault search 关键词\n\n**相关命令**:\n- clawvault search 经验\n- clawvault backlog list\n",
+      "frontmatter": {
+        "title": "Obsidian聊天记录自动同步配置完成",
+        "date": "2026-02-22",
+        "memoryType": "lesson"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:58:29.768Z"
+    },
+    {
       "id": "lessons/alpaca",
       "path": "/home/wewewu/memory/lessons/alpaca.md",
       "category": "lessons",
@@ -1057,21 +1072,6 @@
       "links": [],
       "tags": [],
       "modified": "2026-02-19T14:21:25.651Z"
-    },
-    {
-      "id": "lessons/obsidian",
-      "path": "/home/wewewu/memory/lessons/obsidian.md",
-      "category": "lessons",
-      "title": "Obsidian聊天记录自动同步配置完成",
-      "content": "\n**时间**: 2026-02-22\n**任务**: 配置 Obsidian 聊天记录自动提取经验\n\n**已完成配置**:\n1. Obsidian 自动记录聊天 (每30分钟)\n2. ClawVault 有 transcripts 目录\n3. 创建 cron 任务: extract_lessons (每4小时运行)\n4. 自动提取有价值经验保存到 lessons/\n\n**工作流程**:\n- 每30分钟: all-chats-*.md 自动保存\n- 每4小时: LLM 提取经验 → clawvault remember lesson\n- 手动查看: clawvault search 关键词\n\n**相关命令**:\n- clawvault search 经验\n- clawvault backlog list\n",
-      "frontmatter": {
-        "title": "Obsidian聊天记录自动同步配置完成",
-        "date": "2026-02-22",
-        "memoryType": "lesson"
-      },
-      "links": [],
-      "tags": [],
-      "modified": "2026-02-22T02:58:29.768Z"
     }
   ]
 }

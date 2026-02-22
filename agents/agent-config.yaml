@@ -1,0 +1,58 @@
+# 子代理记忆隔离配置
+# 每个子代理有自己的专属目录，通过 handoffs/ 进行通信
+
+agents:
+  xiaozhi:
+    name: "小智"
+    role: "实验机 AI 助手"
+    memory_path: "agents/xiaozhi/"
+    capabilities:
+      - 合约交易分析
+      - 数据获取
+      - 任务执行
+    handoff_from: ["main"]  # 可以接收哪些 agent 的任务
+    handoff_to: ["main"]    # 可以交接给哪些 agent
+
+  trader:
+    name: "交易代理"
+    role: "负责交易执行"
+    memory_path: "agents/trader/"
+    capabilities:
+      - 交易策略
+      - 订单执行
+      - 风险管理
+    handoff_from: ["main", "research"]
+    handoff_to: ["main"]
+
+  research:
+    name: "研究代理"
+    role: "信息收集分析"
+    memory_path: "agents/research/"
+    capabilities:
+      - 市场分析
+      - 知识收集
+      - 报告生成
+    handoff_from: ["main"]
+    handoff_to: ["main", "trader"]
+
+  general:
+    name: "通用代理"
+    role: "辅助任务"
+    memory_path: "agents/general/"
+    capabilities:
+      - 通用任务
+    handoff_from: ["main"]
+    handoff_to: ["main"]
+
+# 通信协议
+protocol:
+  handoff:
+    required_fields:
+      - task_title
+      - task_context
+      - progress
+      - next_steps
+    optional_fields:
+      - relevant_lessons
+      - preferences
+      - warnings
