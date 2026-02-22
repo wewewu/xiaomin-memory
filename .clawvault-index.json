@@ -648,6 +648,21 @@
       "modified": "2026-02-19T14:09:38.350Z"
     },
     {
+      "id": "lessons/sudo",
+      "path": "/home/wewewu/memory/lessons/sudo.md",
+      "category": "lessons",
+      "title": "sudo环境变量",
+      "content": "\n**时间**: 2026-02-19\n**教训**: 配置 sudo 权限后，必须同步配置环境变量！否则 gateway 重启后命令失效（openclaw 命令找不到）\n**原因**: sudo 不会继承当前 shell 的环境变量\n",
+      "frontmatter": {
+        "title": "sudo环境变量",
+        "date": "2026-02-22",
+        "memoryType": "lesson"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:42:39.654Z"
+    },
+    {
       "id": "lessons/sudo-环境变量",
       "path": "/home/wewewu/memory/lessons/sudo-环境变量.md",
       "category": "lessons",
@@ -936,6 +951,21 @@
       "links": [],
       "tags": [],
       "modified": "2026-02-19T14:21:25.651Z"
+    },
+    {
+      "id": "lessons/alpaca",
+      "path": "/home/wewewu/memory/lessons/alpaca.md",
+      "category": "lessons",
+      "title": "Alpaca免费数据方案",
+      "content": "\n**时间**: 2026-02-09\n**问题**: 网络环境无法访问 Binance/Hyperliquid API（超时、被墙）\n**约束**: 大哥穷，买不起代理\n**方案**: Alpaca Python SDK - 免费、无需 API Key 的加密货币数据\n\n```python\nfrom alpaca.data import CryptoHistoricalDataClient, TimeFrame\nclient = CryptoHistoricalDataClient()  # 无需 API Key！\n```\n\n**成果**: \n- 获取 232 条 ETH 1小时K线数据（10天）\n- 定时任务每小时自动推送飞书\n- 完全免费，无需代理\n",
+      "frontmatter": {
+        "title": "Alpaca免费数据方案",
+        "date": "2026-02-22",
+        "memoryType": "lesson"
+      },
+      "links": [],
+      "tags": [],
+      "modified": "2026-02-22T02:43:06.724Z"
     }
   ]
 }
